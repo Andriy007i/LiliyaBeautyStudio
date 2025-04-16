@@ -1,0 +1,246 @@
+/* Сброс отступов и рамок */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  /* Базовые стили */
+body {
+    font-family: 'Courier New', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+  /* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+  /* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    padding: 8px 12px;
+    color: #333;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+  /* Hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0;
+}
+
+.hero--info {
+    flex: 1 1 300px;
+}
+
+.hero--info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hero--info h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero--info p {
+    margin-bottom: 20px;
+}
+
+.hero--info .btn {
+    background: #333;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero--info .btn:hover {
+    background: #555;
+}
+
+.hero img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+  /* Портфолио */
+#portfolio h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hairs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.hair {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.hair img {
+    width: 100%;
+    display: block;
+}
+
+.hair span {
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+}
+
+  /* Про нас */
+.big-text h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.big-text p {
+    font-size: 16px;
+}
+
+  /* Цены */
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h4 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+  /* Запись онлайн */
+#booking h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+  /* Контакты */
+#contacts h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#contacts p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-buttons a {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.social-buttons a:hover {
+    background: #555;
+}
+
+  /* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #eee;
+    color: #666;
+    margin-top: 30px;
+}
+  /* Адаптив */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
+.booking-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+
+#calendar-button {
+        align-self: flex-start;
+        margin-bottom: 10px;
+}

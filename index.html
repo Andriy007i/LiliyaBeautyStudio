@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio by Liliya Yanko</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <header class="container">
+        <span class="logo"><img src="logotype.png" alt="Логотип"></span>
+        <nav>
+        <ul>
+            <li class="active"><a href="#">Головна</a></li>
+            <li><a href="#aboutUs">Про нас</a></li>
+            <li><a href="#portfolio">Портфоліо</a></li>
+            <li><a href="#prices">Ціни</a></li>
+            <li><a href="#booking">Запис</a></li>
+            <li class="btn"><a href="#contacts">Контакти</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="hero container">
+        <div class="hero--info">
+        <h2>Студія Краси By Liliya Yanko</h2>
+        <h1>"By the way, your hair looks great"</h1>
+        <p>Ваше волосся в надійних руках професіонала ✨
+            Студія краси Лілії Янько — це місце, де ваше волосся отримує друге життя ✨ ...
+            Тут ви знайдете не лише професійні послуги, а й теплу атмосферу, де кожен клієнт стає частиною нашої великої родини.
+        </p>
+        <button class="btn" onclick="scrollToSection('whyUs')">Детальніше</button>
+        </div>
+        <img src="liliyaYanko.jpg" alt="Фото Лілії">
+    </section>
+
+    <section class="container" id="portfolio">
+        <h3>Портфоліо</h3>
+        <div class="hairs">
+        <div class="hair"><img src="photo1.jpg" alt="1"><span>Блонд</span></div>
+        <div class="hair"><img src="photo6.jpg" alt="2"><span>Каре</span></div>
+        <div class="hair"><img src="photo3.jpg" alt="3"><span>Локони</span></div>
+        <div class="hair"><img src="photo8.jpg" alt="4"><span>Весільна</span></div>
+        </div>
+    </section>
+    <section class="container" id="whyUs">
+        <h3>Чому обирають саме нас?</h3>
+        <p>
+            🌟 <strong>Індивідуальний підхід</strong> — кожна клієнтка для нас як муза. Ми створюємо образ, який підкреслює вашу унікальність.<br>
+            ✂️ <strong>Сучасні техніки</strong> — використовуємо найактуальніші методики стрижок, фарбування й догляду.<br>
+            💬 <strong>Завжди на зв’язку</strong> — консультації в Telegram або Viber перед візитом? Без проблем!<br>
+            🧖‍♀️ <strong>Релакс-атмосфера</strong> — чашечка кави, приємна музика та дружній майстер — ось чому клієнти повертаються знову.
+        </p>
+    </section>
+    
+    <section class="container big-text" id="aboutUs">
+        <h3>Про нас</h3>
+        <p>Лілія Янько — майстер з величезним досвідом. Ми пропонуємо стрижки, фарбування будь-якої складності, укладки та більше.
+            Майстер з великим серцем і ще більшим досвідом, Лілія Янько створює не просто зачіски — вона втілює ваші мрії у реальність.
+                💇‍♀️ Стрижки будь-якої складності — від класики до ультрасучасних форм.
+                🎨 Офарблення волосся — складне, багатотонове, креативне або природне — результат завжди WOW!
+                💁‍♀️ Індивідуальний підхід до кожного клієнта — адже кожна жінка заслуговує виглядати розкішно.
+                
+                Тут ви не просто оновите свій образ — ви отримаєте заряд впевненості, ніжності й турботи 💖
+                Записуйтесь та дозвольте своєму волоссю засяяти по-новому!
+        </p>
+    </section>
+
+    <section class="container" id="prices">
+        <h3>Ціни</h3>
+        <div class="cards-section">
+        <div class="card"><h4>Стрижка</h4><p>від 400 грн</p></div>
+        <div class="card"><h4>Фарбування</h4><p>від 1000 грн</p></div>
+        <div class="card"><h4>Укладка</h4><p>від 300 грн</p></div>
+        <div class="card"><h4>Кератин</h4><p>від 1500 грн</p></div>
+        </div>
+    </section>
+
+    <section class="container" id="booking">
+        <h3>Запис онлайн</h3>
+        <div class="booking-wrapper">
+            <div id="calendar-button"></div>
+            <iframe src="https://calendar.google.com/calendar/embed?src=yourcalendar%40gmail.com&ctz=Europe%2FKyiv" width="100%" height="400" frameborder="0"></iframe>
+        </div>
+        </section>
+
+    <section class="container" id="contacts">
+        <h3>Контакти</h3>
+        <p>Телефон: <a href="tel:+380990775285">+38 099 077 52 85</a></p>
+        <p>Адреса: <a href="https://maps.google.com/?q=м. Харків, вул. Трінклера, 2, 6 поверх, 629 кабінет" target="_blank">м. Харків, вул. Трінклера, 2, 6 поверх, 629 кабінет</a></p></a></p>
+
+        <div class="social-buttons">
+        <a href="https://t.me/liliya_yanko" target="_blank">Telegram</a>
+        <a href="viber://chat?number=+380990775285">Viber</a>
+        <a href="https://wa.me/380990775285" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2025 Beauty Studio by Liliya Yanko</p>
+    </footer>
+    </div>
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+window.addEventListener('load', function () {
+    calendar.schedulingButton.load({
+        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1MqDGlnzhgr_3RB2PeKdB3EJqeMIKkaAP4YMcSR5q7tF8GWeZE6hFLOAjJSAZRT6Tz9bjL3JeH?gv=true',
+        color: '#039BE5',
+        label: 'Записатися у салон',
+        target: document.getElementById('calendar-button'),
+    });
+    });
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
+<script>
+    function scrollToSection(id) {
+        const section = document.getElementById(id);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+    }
+</script>
+
+</body>
+</html>
