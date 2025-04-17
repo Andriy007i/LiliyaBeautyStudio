@@ -5,6 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Studio by Liliya Yanko</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.documentElement.classList.add('dark');
+  }
+</script>
+
+<style>
+  body {
+    transition: background 0.3s, color 0.3s;
+  }
+  .dark body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  .card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  .dark .card {
+    background: #1e1e1e;
+    box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+  }
+
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .dark .theme-toggle {
+    background: #333;
+    color: #fff;
+  }
+</style>
+
 </head>
 <body>
     <div class="wrapper">
@@ -123,50 +167,6 @@ window.addEventListener('load', function () {
     }
     }
 </script>
-    <script>
-  if (localStorage.getItem('theme') === 'dark') {
-    document.documentElement.classList.add('dark');
-  }
-</script>
-
-<style>
-  body {
-    transition: background 0.3s, color 0.3s;
-  }
-  .dark body {
-    background-color: #121212;
-    color: #f0f0f0;
-  }
-
-  .card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  .dark .card {
-    background: #1e1e1e;
-    box-shadow: 0 2px 10px rgba(255,255,255,0.05);
-  }
-
-  .theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 999;
-    background: #eee;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 8px;
-  }
-  .dark .theme-toggle {
-    background: #333;
-    color: #fff;
-  }
-</style>
-
-
+    
 </body>
 </html>
