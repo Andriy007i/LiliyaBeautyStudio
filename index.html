@@ -65,6 +65,16 @@
         </ul>
         </nav>
     </header>
+        <button class="theme-toggle" onclick="toggleTheme()">🌗 Тема</button>
+
+<script>
+  function toggleTheme() {
+    document.documentElement.classList.toggle('dark');
+    const isDark = document.documentElement.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+</script>
+
 
     <section class="hero container">
         <div class="hero--info">
