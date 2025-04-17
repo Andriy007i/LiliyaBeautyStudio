@@ -37,7 +37,11 @@ header {
 
 .logo img {
     height: 60px;
-    border-radius: 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s, background 0.3s;
 }
 
 nav ul {
@@ -245,4 +249,9 @@ footer {
 #calendar-button {
         align-self: flex-start;
         margin-bottom: 10px;
+}
+.dark .logo img {
+    border: 3px solid #444;
+    background-color: #444;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
