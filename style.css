@@ -151,7 +151,13 @@ nav ul li.active a {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-
+.carusel.li::scroll-marker:target-current {
+  background: CanvasText;
+}
+.carusel.li::scroll-marker:hover,
+.carusel.li::scroll-marker:focus-visible {
+  background: LinkText;
+}
 .carousel .hair {
   scroll-snap-align: center;
 }
@@ -165,13 +171,6 @@ nav ul li.active a {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-li::scroll-marker:target-current {
-  background: CanvasText;
-}
-li::scroll-marker:hover,
-li::scroll-marker:focus-visible {
-  background: LinkText;
 }
   /* Про нас */
 .big-text h3 {
