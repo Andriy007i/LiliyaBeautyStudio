@@ -38,6 +38,7 @@
  
  .logo img {
      height: 60px;
+     border-radius: 30px;
  }
  
  nav ul {
