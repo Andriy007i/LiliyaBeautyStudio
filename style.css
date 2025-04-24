@@ -142,6 +142,18 @@ nav ul li.active a {
     padding: 10px;
     font-weight: 500;
 }
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 40%;
+  gap: 2rem;
+
+  scroll-snap-type: x mandatory;
+
+  > li {
+    scroll-snap-align: center;
+  }
+}
 
   /* Про нас */
 .big-text h3 {
