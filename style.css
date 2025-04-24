@@ -147,21 +147,13 @@ nav ul li.active a {
   grid-auto-flow: column;
   grid-auto-columns: 40%;
   gap: 2rem;
-
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-marker-group: after;
-  @media (prefers-reduced-motion: no-preference) {
-    scroll-behavior: smooth;
-  > li {
-    scroll-snap-align: center;
-  > li::scroll-marker {
-    content: "";
-    aspect-ratio: 1;
-    border: 2px solid CanvasText;
-    border-radius: 100%;
-    width: 20px;
-  }
-  }
+  scroll-behavior: smooth;
+}
+
+.carousel .hair {
+  scroll-snap-align: center;
 }
 .carousel::scroll-button(left) {
   content: "Left";
