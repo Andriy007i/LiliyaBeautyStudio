@@ -38,7 +38,11 @@
  
  .logo img {
      height: 60px;
-     border-radius: 30px;
+     border-radius: 50%;
+     border: 3px solid #fff;
+     background-color: #fff;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     transition: border 0.3s, background 0.3s;
  }
  
  nav ul {
