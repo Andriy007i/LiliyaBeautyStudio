@@ -1,4 +1,6 @@
-@@ -0,0 +1,246 @@
+html {
+  scroll-behavior: smooth;
+}
  /* Сброс отступов и рамок */
  * {
      margin: 0;
