@@ -44,7 +44,16 @@ html {
     z-index: 1000;
     transition: background-color 0.3s ease; 
 }
+header {
+    background-color: #fff; /* Белый фон по умолчанию */
+    color: black;
+}
 
+/* Стиль для хедера в темной теме */
+.dark header {
+    background-color: #000; /* Черный фон для темной темы */
+    color: white; /* Белый текст в темной теме */
+}
 
 header.scrolled {
     background-color: transparent;
