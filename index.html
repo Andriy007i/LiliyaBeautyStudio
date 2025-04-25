@@ -94,10 +94,16 @@ body[data-theme="dark"] * {
         nav ul li {
             margin: 0 10px; /* Space between nav items */
         }
-  .dark.header{
-   background-color: black;
-   color: white;
-  }
+  #header a {
+            margin-top: 10px; /* Add top margin to links */
+            color: inherit; /* Ensure text color inherits from parent */
+        }
+        .dark #header {
+            background-color: #333; /* Dark background for header in dark theme */
+        }
+        .dark #header a {
+            color: white; /* Light text color for links in dark theme */
+        }
  </style>
  
  </head>
