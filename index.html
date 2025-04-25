@@ -26,16 +26,6 @@
          if (localStorage.getItem('theme') === 'dark') {
          document.documentElement.classList.add('dark');
           }
-         const themeBtn = document.querySelector('.theme-toggle');
-         function updateIcon() {
-            themeBtn.textContent = document.documentElement.classList.contains('dark') ? '🌙 Тема' : '☀️ Тема';
-          }
-         updateIcon();
-         themeBtn.addEventListener('click', () => {
-         document.documentElement.classList.toggle('dark');
-         localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-         updateIcon();
-         });
       </script>
  
  <style>
@@ -89,7 +79,7 @@
              <li><a href="#prices">Ціни</a></li>
              <li><a href="#booking">Запис</a></li>
              <li class="btn"><a href="#contacts">Контакти</a></li>
-             <button class="theme-toggle" onclick="toggleTheme()">🌗 Тема</button>
+             <li><button class="theme-toggle" onclick="toggleTheme()">🌗 Тема</button></li>
          </ul>
          </nav>
      </header>
