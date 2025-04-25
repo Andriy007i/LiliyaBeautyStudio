@@ -34,8 +34,13 @@
    }
    .dark body {
      background-color: #121212;
-     color: #f0f0f0;
+     color: white;
    }
+  body[data-theme="dark"], 
+body[data-theme="dark"] * {
+  color: white !important;
+}
+
  
    .card {
      background: #fff;
