@@ -72,22 +72,22 @@ body[data-theme="dark"] * {
  
  </head>
  <body>
-     <div class="wrapper">
-     <header class="container" id="header">
-         <span class="logo"><img src="img/logotype.png" alt="Логотип"></span>
-         <nav>
-         <ul>
-             <li class="active"><a href="#">Головна</a></li>
-             <li><a href="#aboutUs">Про нас</a></li>
-             <li><a href="#portfolio">Портфоліо</a></li>
-             <li><a href="#prices">Ціни</a></li>
-             <li><a href="#booking">Запис</a></li>
-             <li class="btn"><a href="#contacts">Контакти</a></li>
-             <li><button class="theme-toggle" onclick="toggleTheme()">🌗 Тема</button></li>
-         </ul>
-         </nav>
-     </header>
-     </div>
+     <header id="header">
+        <div class="container">
+            <span class="logo"><img src="img/logotype.png" alt="Логотип"></span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Головна</a></li>
+                    <li><a href="#aboutUs">Про нас</a></li>
+                    <li><a href="#portfolio">Портфоліо</a></li>
+                    <li><a href="#prices">Ціни</a></li>
+                    <li><a href="#booking">Запис</a></li>
+                    <li class="btn"><a href="#contacts">Контакти</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" onclick="toggleTheme()">🌗 Тема</button>
+        </div>
+    </header>
  <script>
   window.addEventListener('scroll', function () {
     const header = document.getElementById('header');
