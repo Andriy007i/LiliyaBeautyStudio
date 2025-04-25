@@ -84,7 +84,10 @@ header.scrolled {
      color: #fff;
      border-radius: 5px;
  }
- 
+ nav ul li .theme-toggle {
+  margin-left: 10px;
+  padding: 6px 12px;
+}
    /* Hero */
  .hero {
      display: flex;
