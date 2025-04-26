@@ -32,6 +32,7 @@ html {
  }
    /* Header */
  header {
+    height: 80px;
     position: fixed;
     display: flex;
     top: 0;
