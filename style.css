@@ -168,6 +168,11 @@ header.scrolled {
      font-size: 24px;
      text-align: center;
  }
+#portfolio h2 {
+     margin-bottom: 15px;
+     font-size: 24px;
+     text-align: center;
+ }
  .carousel {
       display: flex;
       overflow-x: auto;
