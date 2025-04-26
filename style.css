@@ -98,6 +98,23 @@ header.scrolled {
   margin-left: 10px;
   padding: 6px 12px;
 }
+.dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #444;
+      min-width: 160px;
+      top: 30px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
    /* Hero */
  .hero {
      display: flex;
