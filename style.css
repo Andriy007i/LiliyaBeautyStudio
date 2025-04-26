@@ -98,6 +98,9 @@ header.scrolled {
   margin-left: 10px;
   padding: 6px 12px;
 }
+.dropdown {
+  position: relative;
+}
 .dropdown-content {
       display: none;
       position: absolute;
