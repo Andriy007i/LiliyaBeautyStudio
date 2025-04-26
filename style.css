@@ -25,6 +25,9 @@ html {
  
    /* Контейнер */
  .container {
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
      width: 90%;
      max-width: 1200px;
      margin: 0 auto;
@@ -75,6 +78,7 @@ header {
      display: flex;
      gap: 15px;
      flex-wrap: wrap;
+   margin: 0;
  }
  
  nav ul li a {
