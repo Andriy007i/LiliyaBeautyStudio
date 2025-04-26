@@ -168,7 +168,22 @@ header.scrolled {
      font-size: 24px;
      text-align: center;
  }
- 
+ .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+    }
+    .carousel img {
+      width: 300px;
+      height: 400px;
+      object-fit: cover;
+      scroll-snap-align: center;
+      border-radius: 10px;
+    }
+    .carousel::-webkit-scrollbar {
+      display: none;
+    }
  .hairs {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
